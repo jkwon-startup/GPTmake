@@ -200,7 +200,7 @@ async function sendMessage() {
 
     // Call Gemini API
     try {
-        const response = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=YOUR_GEMINI_API_KEY', {
+        const response = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=AIzaSyCBqyTOuwooxl0qD0ps8gDQsiuVPOb-4sk', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
