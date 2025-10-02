@@ -24,7 +24,7 @@
                     <span class="section-title">1. ChatGPT 기본 원리</span>
                     <ul class="sub-menu">
                         <li><a href="#slide-1" class="nav-link" data-slide="1">프롬프트 작성법</a></li>
-                        <li><a href="#slide-2" class="nav-link" data-slide="2">모델 비교 (3.5/4/o1)</a></li>
+                        <li><a href="#slide-2" class="nav-link" data-slide="2">모델 비교 (3.5/4/5)</a></li>
                         <li><a href="#slide-3" class="nav-link" data-slide="3">GPTs 구성요소</a></li>
                         <li class="sub-sub-menu">
                             <ul>
@@ -132,85 +132,85 @@
                 <section class="slide" id="slide-2">
                     <div class="slide-content">
                         <h1 class="slide-title">ChatGPT 모델 비교</h1>
-                        <p class="slide-subtitle">3.5 Turbo vs GPT-4 vs o1 (GPT-5급)</p>
+                        <p class="slide-subtitle">3.5 Turbo vs GPT-4 vs GPT-5</p>
                         <div class="comparison-table-3col">
                             <div class="comparison-header">
                                 <div></div>
                                 <div class="model-label">GPT-3.5 Turbo</div>
                                 <div class="model-label">GPT-4</div>
-                                <div class="model-label highlight">o1 (GPT-5급)</div>
+                                <div class="model-label highlight">GPT-5</div>
                             </div>
                             <div class="comparison-row">
                                 <div class="feature-name">출시일</div>
                                 <div>2022년 11월</div>
                                 <div>2023년 3월</div>
-                                <div class="highlight">2024년 9월</div>
+                                <div class="highlight">2025년 8월</div>
                             </div>
                             <div class="comparison-row">
                                 <div class="feature-name">모델 크기</div>
                                 <div>중형 모델</div>
                                 <div>대형 모델</div>
-                                <div class="highlight">초대형 + 추론 최적화</div>
+                                <div class="highlight">초대형 통합 시스템</div>
                             </div>
                             <div class="comparison-row">
                                 <div class="feature-name">추론 능력</div>
                                 <div>기본적인 논리</div>
                                 <div>고급 논리 추론</div>
-                                <div class="highlight">PhD 수준 추론 (CoT)</div>
+                                <div class="highlight">최고 수준 추론 + 자동 라우팅</div>
                             </div>
                             <div class="comparison-row">
                                 <div class="feature-name">사고 과정</div>
                                 <div>즉시 답변</div>
                                 <div>즉시 답변</div>
-                                <div class="highlight">내부 사고 → 답변 (Chain of Thought)</div>
+                                <div class="highlight">빠른 모델 + 심층 추론 모델 자동 선택</div>
                             </div>
                             <div class="comparison-row">
                                 <div class="feature-name">코딩 능력</div>
                                 <div>기본</div>
                                 <div>우수</div>
-                                <div class="highlight">Codeforces 89% (상위 11%)</div>
+                                <div class="highlight">SWE-bench 74.9%, Aider 88%</div>
                             </div>
                             <div class="comparison-row">
                                 <div class="feature-name">수학/과학</div>
                                 <div>기본</div>
                                 <div>우수</div>
-                                <div class="highlight">AIME 83%, GPQA Diamond 78%</div>
+                                <div class="highlight">AIME 94.6%, MMMU 84.2%</div>
                             </div>
                             <div class="comparison-row">
                                 <div class="feature-name">컨텍스트 길이</div>
                                 <div>~4,000 토큰</div>
                                 <div>~32,000 토큰</div>
-                                <div class="highlight">~128,000 토큰</div>
+                                <div class="highlight">~128,000+ 토큰</div>
                             </div>
                             <div class="comparison-row">
                                 <div class="feature-name">멀티모달</div>
                                 <div>텍스트만</div>
                                 <div>텍스트 + 이미지</div>
-                                <div class="highlight">텍스트만 (향후 멀티모달 예정)</div>
+                                <div class="highlight">텍스트 + 이미지 + 비전 추론</div>
                             </div>
                             <div class="comparison-row">
                                 <div class="feature-name">응답 속도</div>
                                 <div>매우 빠름 (1~2초)</div>
                                 <div>보통 (3~10초)</div>
-                                <div class="highlight">느림 (10~60초, 사고 시간 포함)</div>
+                                <div class="highlight">적응형 (쉬운 질문: 빠름 / 어려운 질문: 심층)</div>
                             </div>
                             <div class="comparison-row">
                                 <div class="feature-name">주요 용도</div>
                                 <div>일상 대화, 간단 작업</div>
                                 <div>복잡한 글쓰기, 분석</div>
-                                <div class="highlight">고난도 코딩, 수학, 과학 연구</div>
+                                <div class="highlight">전문가급 코딩, 연구, 창작</div>
                             </div>
                             <div class="comparison-row">
-                                <div class="feature-name">가격</div>
+                                <div class="feature-name">가격 (API)</div>
                                 <div>무료</div>
                                 <div>$20/월 (Plus)</div>
-                                <div class="highlight">$20/월 (Plus, 사용량 제한)</div>
+                                <div class="highlight">$1.25/1M 입력, $10/1M 출력</div>
                             </div>
                             <div class="comparison-row">
                                 <div class="feature-name">환각 현상</div>
                                 <div>높음</div>
                                 <div>보통</div>
-                                <div class="highlight">매우 낮음 (자기 검증)</div>
+                                <div class="highlight">매우 낮음 (GPT-4o 대비 45%↓)</div>
                             </div>
                         </div>
 
@@ -235,16 +235,17 @@
                                 </ul>
                             </div>
                             <div class="highlight-card special">
-                                <h3>🧠 o1 (GPT-5급)</h3>
-                                <p><strong>추천:</strong> 고도의 논리적 사고가 필요한 작업</p>
+                                <h3>🧠 GPT-5</h3>
+                                <p><strong>추천:</strong> 전문가급 작업과 복잡한 문제 해결</p>
                                 <ul>
-                                    <li>✅ 복잡한 알고리즘 설계</li>
-                                    <li>✅ 고급 수학 문제 풀이</li>
-                                    <li>✅ 과학 연구 보조</li>
-                                    <li>✅ 전략적 의사결정 분석</li>
+                                    <li>✅ 최고 수준 코딩 (SWE-bench 74.9%)</li>
+                                    <li>✅ 고급 수학/과학 (AIME 94.6%)</li>
+                                    <li>✅ 멀티모달 비전 추론</li>
+                                    <li>✅ 창의적 글쓰기 협업</li>
+                                    <li>✅ 환각 현상 최소화 (GPT-4o 대비 45%↓)</li>
                                 </ul>
                                 <div class="note-box">
-                                    <strong>⚡ 특징:</strong> "사고하는 AI" - 답변 전 내부적으로 문제를 단계별로 분석합니다. 마치 사람이 종이에 풀이 과정을 쓰듯이!
+                                    <strong>⚡ 특징:</strong> 적응형 시스템 - 쉬운 질문엔 빠른 모델, 어려운 문제엔 심층 추론 모델을 자동으로 선택합니다!
                                 </div>
                             </div>
                         </div>
@@ -261,12 +262,12 @@
                                     <p>→ GPT-4</p>
                                 </div>
                                 <div class="tip-step">
-                                    <strong>코딩 경진대회 문제?</strong>
-                                    <p>→ o1</p>
+                                    <strong>최고 성능 필요?</strong>
+                                    <p>→ GPT-5</p>
                                 </div>
                                 <div class="tip-step">
                                     <strong>일반적인 업무?</strong>
-                                    <p>→ GPT-4 (만능)</p>
+                                    <p>→ GPT-4 (가성비 좋음)</p>
                                 </div>
                             </div>
                         </div>
