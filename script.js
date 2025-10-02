@@ -321,56 +321,57 @@ document.addEventListener('DOMContentLoaded', () => {
 // ========================================
 // Progress Indicator
 // ========================================
-function updateProgress() {
-    const progress = ((currentSlide + 1) / totalSlides) * 100;
-
-    // Create progress bar if it doesn't exist
-    if (!document.querySelector('.progress-bar')) {
-        const progressBar = document.createElement('div');
-        progressBar.className = 'progress-bar';
-        progressBar.innerHTML = '<div class="progress-fill"></div>';
-        document.querySelector('.sidebar').appendChild(progressBar);
-
-        const style = document.createElement('style');
-        style.textContent = `
-            .progress-bar {
-                position: absolute;
-                bottom: 20px;
-                left: 20px;
-                right: 20px;
-                height: 4px;
-                background: rgba(0, 0, 0, 0.1);
-                border-radius: 2px;
-                overflow: hidden;
-            }
-            .progress-fill {
-                height: 100%;
-                background: linear-gradient(90deg, #ff3b30, #ff6b60);
-                border-radius: 2px;
-                transition: width 0.3s ease;
-                width: 0%;
-            }
-        `;
-        document.head.appendChild(style);
-    }
-
-    const progressFill = document.querySelector('.progress-fill');
-    if (progressFill) {
-        progressFill.style.width = progress + '%';
-    }
-}
-
-// Update progress on slide change
-document.addEventListener('DOMContentLoaded', () => {
-    updateProgress();
-});
-
-// Override showSlide to update progress
-const originalShowSlide = showSlide;
-showSlide = function(index) {
-    originalShowSlide(index);
-    updateProgress();
-};
+// Disabled - progress bar removed per user request
+// function updateProgress() {
+//     const progress = ((currentSlide + 1) / totalSlides) * 100;
+//
+//     // Create progress bar if it doesn't exist
+//     if (!document.querySelector('.progress-bar')) {
+//         const progressBar = document.createElement('div');
+//         progressBar.className = 'progress-bar';
+//         progressBar.innerHTML = '<div class="progress-fill"></div>';
+//         document.querySelector('.sidebar').appendChild(progressBar);
+//
+//         const style = document.createElement('style');
+//         style.textContent = `
+//             .progress-bar {
+//                 position: absolute;
+//                 bottom: 20px;
+//                 left: 20px;
+//                 right: 20px;
+//                 height: 4px;
+//                 background: rgba(0, 0, 0, 0.1);
+//                 border-radius: 2px;
+//                 overflow: hidden;
+//             }
+//             .progress-fill {
+//                 height: 100%;
+//                 background: linear-gradient(90deg, #ff3b30, #ff6b60);
+//                 border-radius: 2px;
+//                 transition: width 0.3s ease;
+//                 width: 0%;
+//             }
+//         `;
+//         document.head.appendChild(style);
+//     }
+//
+//     const progressFill = document.querySelector('.progress-fill');
+//     if (progressFill) {
+//         progressFill.style.width = progress + '%';
+//     }
+// }
+//
+// // Update progress on slide change
+// document.addEventListener('DOMContentLoaded', () => {
+//     updateProgress();
+// });
+//
+// // Override showSlide to update progress
+// const originalShowSlide = showSlide;
+// showSlide = function(index) {
+//     originalShowSlide(index);
+//     updateProgress();
+// };
 
 // ========================================
 // API Key Setup Helper
