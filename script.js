@@ -4,7 +4,7 @@
 
 // Global Variables
 let currentSlide = 0;
-const totalSlides = 18;
+const totalSlides = 19;
 
 // ========================================
 // P5.js Background Animation
